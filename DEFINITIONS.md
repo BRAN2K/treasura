@@ -24,11 +24,13 @@ Backend e Frontend
 
 ---
 
-### **2 Arquitetura do Sistema**
+### **2. Arquitetura do Sistema**
 
 #### **Separação das Frentes**
 
-Repositório único, com pastas separadas para cada frente do projeto. Para facilitar a separação lógica dos projetos, considerar utilizar [Lerna](https://lerna.js.org/).
+- Repositório único, com pastas separadas para cada frente do projeto. Por enquanto cada diretório de frentes do projeto, não terão ligações uns com os outros.
+- [USE] No futuro, para facilitar a separação lógica dos projetos, melhorar compartilhamento de dependência e processos de CI, considerar utilizar [Nx](https://nx.dev/) juntamente com [Turborepo](https://turbo.build/), seguir [esta serie de artigos](https://javascript.plainenglish.io/sharing-typescript-with-nx-and-turborepo-part-1-introduction-to-monorepos-d8d54b805e46) e ler esse tópico do [Reddit](https://www.reddit.com/r/typescript/comments/15edryd/sharing_typescript_with_nx_and_turborepo_4part/).
+- Gerenciador de pacotes será o [pnpm](https://pnpm.io/)
 
 #### **Design Patterns**
 
@@ -137,7 +139,7 @@ Git + Github + [Conventional Commits](https://www.conventionalcommits.org/en/v1.
 #### Linguagens e Frameworks
 
 - **Linguagem**: TypeScript
-- **Frameworks/Bibliotecas**: NextJS + [MaterialUI](https://mui.com/material-ui/) + Emotion
+- **Frameworks/Bibliotecas**: NextJS + ([shadcdn](https://ui.shadcn.com/) ou [ChakraUI](https://v2.chakra-ui.com/)) + Emotion
 
 #### Design System
 
